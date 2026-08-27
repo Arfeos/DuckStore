@@ -1,0 +1,25 @@
+section.container-low {background-color: #fefeff; font-family: 'Poppins', sans-serif; padding: 20px 10px; display: flex; justify-content: center; min-height: 100vh; align-items: center;}
+.container-center {max-width: 1200px; width: 100%;}
+.tarjeta-producto {background-color: #cac7c7; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); display: flex; overflow: hidden; gap: 40px;}
+.columna-imagen {flex: 1 1 45%; display: flex; justify-content: left; align-items: center; padding: 20px;}
+.columna-imagen img {max-width: 100%; height: auto; display: block; object-fit: contain;}
+.marco-exclusivo {position: absolute; top: 60px; left: 80px; background-color: #1a2332; color: #ffffff; padding: 10px 20px; border-radius: 20px; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;}
+.columna-descripcion {flex: 1 1 55%; padding: 60px 60px 60px 20px; display: flex; flex-direction: column; justify-content: right;}
+.titulo-producto {font-size: 32px; font-weight: 700; color: #1f2937; margin-bottom: 20px; line-height: 1.2;}
+.descripcion-producto {font-size: 16px; color: #4b5563; line-height: 1.6; margin-bottom: 40px; max-width: 500px;}
+.contador-tiempo {display: flex; align-items: center; gap: 30px; margin-bottom: 40px; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; padding: 20px 0; width: fit-content;}
+.bloque-tiempo {text-align: center; display: flex; flex-direction:column; align-items: center;}
+.bloque-tiempo .numero {font-size: 36px; font-weight: 700; color: #1f2937;}
+.bloque-tiempo .etiqueta {font-size: 12px; color: #4b5563; font-weight: 500; margin-top: 5px;}
+.bloque-tiempo .separador {font-size: 36px; font-weight: 700; color: #1f2937; align-self: flex-start; line-height: 1;}
+.precio-reserva {display: flex; align-items: center; gap: 30px;}
+.precio-reserva .precio {font-size: 28px; font-weight: 700; color: #1f2937;}
+.precio-reserva .boton-reserva {font-size: 15px; background-color: #111827; color: #ffffff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;}
+.precio-reserva .boton-reserva:hover {background-color: #333;transform: translateY(-2px);}
+@media (max-width: 992px) {
+    .tarjeta-producto {flex-direction: column; gap: 0px;}
+    .columna-imagen {width: 100%; padding: 40px 20px 20px 20px;}
+    .columna-descripcion {width: 100%; padding: 20px 40px 60px 40px; align-items: center; text-align: center;}
+    .descripcion-producto {margin-left: auto; margin-right: auto;}
+    .contador-tiempo {margin-left: auto; margin-right: auto;}
+}
