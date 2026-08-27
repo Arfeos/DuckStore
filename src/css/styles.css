@@ -1,0 +1,25 @@
+body{
+    margin-inline: 0px;
+}
+/* HEADER */
+/* FOOTER */
+footer{
+    padding: 30px 20px;
+    background-color: #E1E3E4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .LogoTitle, .SubTitle{ 
+font-family: "Plus Jakarta Sans";
+    }
+    .LogoTitle{
+        margin-top: 0px;     
+        font-size: 1.5em;
+    }
+    .SubTitle{
+        font-weight: normal;
+        font-size: 1em;
+    }
+    p{
+        font-family: "Be Vietnam Pro";
+    }
+}
