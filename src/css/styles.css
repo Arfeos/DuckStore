@@ -1,25 +1,123 @@
-body{
-    margin-inline: 0px;
+body {
+  margin-inline: 0px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* HEADER */
+
+
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  background: #fff;
+}
+
+.header-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.logo {
+  color: #6b8e23;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.nav a {
+  color: #777;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #6b8e23;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search {
+  width: 150px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+}
+
+.search span {
+  color: #999;
+  font-size: 13px;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 9px;
+}
+
+.search input::placeholder {
+  color: #999;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
 /* FOOTER */
-footer{
-    padding: 30px 20px;
-    background-color: #E1E3E4;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    .LogoTitle, .SubTitle{ 
-font-family: "Plus Jakarta Sans";
-    }
-    .LogoTitle{
-        margin-top: 0px;     
-        font-size: 1.5em;
-    }
-    .SubTitle{
-        font-weight: normal;
-        font-size: 1em;
-    }
-    p{
-        font-family: "Be Vietnam Pro";
-    }
+footer {
+  padding: 50px 20px;
+  background-color: #e1e3e4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  .LogoTitle,
+  .SubTitle {
+    font-family: "Plus Jakarta Sans";
+    margin-block: 1em;
+  }
+  .LogoTitle {
+    margin-top: 0px;
+    font-size: 1.5em;
+    color: #6f5c00;
+  }
+  .SubTitle {
+    font-weight: normal;
+    font-size: 1em;
+  }
+  p {
+    font-family: "Be Vietnam Pro";
+    color: #4d4732;
+    margin-block: 1em;
+  }
 }
