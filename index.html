@@ -27,22 +27,21 @@
     <header class="header">
       <div class="header-container">
         <a href="#" class="logo">DuckStore</a>
-        <nav class="nav">
-          <a href="#">Início</a>
-          <a href="#">Catálogo</a>
-          <a href="#">Contacto</a>
+        <nav class="nav-links">
+          <ul>
+          <li><a href="#">Início</li>
+          <li><a href="#">Catálogo</a><li>
+          <li><a href="#">Contacto</a></li>
+          </ul>
         </nav>
-
         <span>
         <div class="header-actions">
-          <div class="search">
+          <div class="search ">
             <span>⌕</span>
             <input type="text" placeholder="Search ducks..." /></div>
-        <span class="material-symbols-outlined">shopping_cart</span>
-<span class="material-symbols-outlined">person</span>
-          
-        </div>
-      </div>
+        <button><span class="material-symbols-outlined">shopping_cart</span></button>
+       <button><span class="material-symbols-outlined">person</span></button>
+        <button  aria-label="Menu" class="md:hidden p-2 text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200 active:scale-95 transition-all burguerMenu_icon"><span class="material-symbols-outlined">menu</span></button>
     </header>
 <!-- Inicio sección Venta exclusiva -->    
     <main>
@@ -91,6 +90,7 @@
         <div class="feature-section">
           <div class="card-header">
             <h2>Patos destacados</h2>
+            <!-- hola -->
             <p>Nuestros patos más populares en este momento.</p>
           </div>
           <div class="cards-grid">
