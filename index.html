@@ -22,6 +22,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" 
 />
 
+    <!-- Inicio BANNER -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Final BANNER -->
   </head>
   <body>
     <header class="header">
@@ -43,14 +46,30 @@
        <button><span class="material-symbols-outlined">person</span></button>
         <button  aria-label="Menu" class="md:hidden p-2 text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200 active:scale-95 transition-all burguerMenu_icon"><span class="material-symbols-outlined">menu</span></button>
     </header>
-<!-- Inicio sección Venta exclusiva -->    
     <main>
+        <!-- Inicio BANNER -->
+        <section class="hero">
+          
+  
+         <div class="hero-image">
+          <div class="hero-content">
+            <h2 class="hero-title">¡Crea tu colección!</h2>
+             <p class="hero-desc">Descubre el patito de goma perfecto para tu baño, escritorio o colección. Desde el clásico amarillo hasta piezas gigantes, lo tenemos todo.</p>
+             <button class="hero-btn" type="button">Compra ahora <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span></button>
+             </div>
+        </div>
+        </section>
+        <!-- Final BANNER -->
+
+
+      <!-- Inicio sección Venta exclusiva -->
+      <link rel="stylesheet" href="src/css/header.css" />
       <section class="container-low">
         <div class="container-center">
           <div class="tarjeta-producto">
             <div class="columna-imagen">
               <div class="marco-exclusivo">VENTA EXCLUSIVA</div>
-              <img src="src/img/venta-exclusiva.png" class="reserva" />
+              <img src="img/venta-exclusiva.png" class="reserva" />
             </div>
             <div class="columna-descripcion">
               <h2 class="titulo-producto">
@@ -85,118 +104,8 @@
           </div>
         </div>
       </section>
-      <!--Final sección venta exclusiva-->
-      <section class="cards">
-        <div class="feature-section">
-          <div class="card-header">
-            <h2>Patos destacados</h2>
-            <!-- hola -->
-            <p>Nuestros patos más populares en este momento.</p>
-          </div>
-          <div class="cards-grid">
-            <div class="card">
-              <div class="card-image">
-                <img src="./src/img/classic.png" alt="The Classic" />
-              </div>
-              <h3 class="card-title">El Clásico</h3>
-              <p class="card-description">
-                El que lo empezó todo. Imprescindible para cualquier momento de
-                baño.
-              </p>
-              <div class="card-footer">
-                <span class="price">$8.99</span>
-                <button class="add-btn">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 5H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <span class="badge new">NEW</span>
-                <img src="./src/img/space.png" alt="The Classic" />
-              </div>
-              <h3 class="card-title">Explorador espacial</h3>
-              <p class="card-description">
-                ¿Listo para un chapuzón en la bañera de la tranquilidad?
-              </p>
-              <div class="card-footer">
-                <span class="price">$12.99</span>
-                <button class="add-btn">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 5H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <img src="./src/img/captain.png" alt="The Classic" />
-              </div>
-              <h3 class="card-title">Capitán Quackbeard</h3>
-              <p class="card-description">
-                Navegando por los mares espumosos en busca de un tesoro perdido.
-              </p>
-              <div class="card-footer">
-                <span class="price">14.99</span>
-                <button class="add-btn">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 5H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-image">
-                <span class="badge sale">SALES</span>
-                <img src="./src/img/megaduck.png" alt="The Classic" />
-              </div>
-              <h3 class="card-title">Megaduck</h3>
-              <p class="card-description">
-                The one that started it all. Essential for any bath time.
-              </p>
-              <div class="card-footer">
-                <span class="price">$5.99</span>
-                <button class="add-btn">
-                  <svg
-                    viewBox="0 0 24 24"
-                    width="18"
-                    height="18"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 5H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
+    <!--Final sección venta exclusiva-->
     <footer>
       <section>
         <h1 class="LogoTitle">DuckStore</h1>
