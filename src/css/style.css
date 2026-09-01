@@ -8,10 +8,6 @@ body{
     max-width: 1100px;
     margin: 0 auto;
 }
-/* CARD-HEADER */
-.card-header{
-
-}
 
 .card-header h2{
     font-size: 2rem;
