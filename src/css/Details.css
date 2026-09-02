@@ -76,3 +76,72 @@
     width: 100%;
   }
 }
+.description-container {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titulo-producto {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.precio-producto {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fdc03c;
+  margin-bottom: 16px;
+}
+.descripcion-producto {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px; 
+}
+.stock-info {
+  display: flex;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2be656;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cantidad {
+  display: flex;
+  margin-bottom: 24px;
+}
+.label-cantidad {
+  display:block;
+  font-size: 1rem;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.input-cantidad {
+  width: 40px;
+  height: 32px;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.boton-comprar {
+  display: flex;
+  justify-content: center;
+}
+.comprar-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f0fd3c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
