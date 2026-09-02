@@ -1,0 +1,78 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+/* 1. Contenedor Padre (Flexbox para 2 columnas) */
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* Separación entre la imagen y el texto */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* 2. Definición del ancho de cada columna */
+.gallery-container,
+.description-container {
+  flex: 1; /* Ocupan exactamente el 50% de ancho cada una */
+  width: 50%;
+}
+
+/* 3. Ajuste de la imagen para que no desborde */
+.columna-imagen-carrusel {
+  position: relative;
+  width: 100%;
+}
+
+.columna-imagen-carrusel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+/* 4. Estilo del texto y botones */
+.prev-button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next-button {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  right: 0; /* Alinea el botón a la derecha */
+  transform: translateY(-50%);
+}
+
+/* 5. Adaptabilidad para Móviles (se apilan verticalmente si la pantalla es pequeña) */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+  
+  .gallery-container,
+  .description-container {
+    width: 100%;
+  }
+}

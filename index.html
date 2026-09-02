@@ -22,70 +22,64 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" 
 />
 
+    <!-- Inicio BANNER -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Final BANNER -->
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <a href="#" class="logo">DuckStore</a>
-        <nav class="nav-links">
-          <ul>
-          <li><a href="#">Início</li>
-          <li><a href="#">Catálogo</a><li>
-          <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-        <span>
-        <div class="header-actions">
-          <div class="search ">
-            <span>⌕</span>
-            <input type="text" placeholder="Search ducks..." /></div>
-        <button><span class="material-symbols-outlined">shopping_cart</span></button>
-       <button><span class="material-symbols-outlined">person</span></button>
-        <button  aria-label="Menu" class="md:hidden p-2 text-on-surface-variant hover:text-primary hover:scale-105 transition-transform duration-200 active:scale-95 transition-all burguerMenu_icon"><span class="material-symbols-outlined">menu</span></button>
-    </header>
-<!-- Inicio sección Venta exclusiva -->    
+    <header-component></header-component>
     <main>
+        <!-- Inicio BANNER -->
+        <section class="hero">
+          
+  
+         <div class="hero-image">
+          <div class="hero-content">
+            <h2 class="hero-title">¡Crea tu colección!</h2>
+             <p class="hero-desc">Descubre el patito de goma perfecto para tu baño, escritorio o colección. Desde el clásico amarillo hasta piezas gigantes, lo tenemos todo.</p>
+             <button class="hero-btn" type="button">Compra ahora <span class="material-symbols-outlined icon-sm" aria-hidden="true">arrow_forward</span></button>
+             </div>
+        </div>
+        </section>
+        <!-- Final BANNER -->
+
+
+      <!-- Inicio sección Venta exclusiva -->
+      <link rel="stylesheet" href="src/css/header.css" />
       <section class="container-low">
-        <div class="container-center">
-          <div class="tarjeta-producto">
-            <div class="columna-imagen">
+        <div class="columna-imagen">
+          <div class="container-left">
+            <div class="tarjeta-producto">
               <div class="marco-exclusivo">VENTA EXCLUSIVA</div>
-              <img src="src/img/venta-exclusiva.png" class="reserva" />
-            </div>
-            <div class="columna-descripcion">
-              <h2 class="titulo-producto">
-                Pato Galáctico que brilla en la oscuridad
-              </h2>
-              <p class="descripcion-producto">
-                Descubre el Pato Galáctico, un artículo exclusivo que destaca
-                por su brillo único en la oscuridad. Ideal para coleccionistas y
-                amantes de lo especial.
-              </p>
-              <div class="contador-tiempo">
-                <div class="bloque-tiempo">
-                  <span class="numero">12</span>
-                  <span class="etiqueta">horas</span>
-                </div>
-                <span class="separador">:</span>
-                <div class="bloque-tiempo">
-                  <span class="numero">30</span>
-                  <span class="etiqueta">minutos</span>
-                </div>
-                <span class="separador">:</span>
-                <div class="bloque-tiempo">
-                  <span class="numero">45</span>
-                  <span class="etiqueta">segundos</span>
-                </div>
-              </div>
-              <div class="precio-reserva">
-                <span class="precio">19.99€</span>
-                <a href="#" class="boton-reserva">Reserva ahora</a>
-              </div>
+              <img src="src/img/venta-exclusiva.png" class="reserva" /></img>
             </div>
           </div>
         </div>
+        <div class="columna-descripcion">
+          <h2 class="titulo-producto">Pato Galáctico que brilla en la oscuridad</h2>
+          <p class="descripcion-producto">Descubre el Pato Galáctico, un artículo exclusivo que destaca por su brillo único en la oscuridad. Ideal para coleccionistas y amantes de lo especial.</p>
+          <div class="contador-tiempo">
+            <div class="bloque-tiempo">
+              <span class="numero">12</span>
+              <span class="etiqueta">horas</span>
+            </div>
+            <span class="separador">:</span>
+            <div class="bloque-tiempo">
+              <span class="numero">30</span>
+              <span class="etiqueta">minutos</span>
+            </div>
+            <span class="separador">:</span>
+            <div class="bloque-tiempo">
+              <span class="numero">45</span>
+              <span class="etiqueta">segundos</span>
+            </div>
+          </div>
+          <div class="precio-reserva">
+            <span class="precio">19.99€</span>
+            <a href="#" class="boton-reserva">Reserva ahora</a>
+          </div>
+        </div>
       </section>
-      <!--Final sección venta exclusiva-->
       <section class="cards">
         <div class="feature-section">
           <div class="card-header">
@@ -197,22 +191,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section>
-        <h1 class="LogoTitle">DuckStore</h1>
-        <h2 class="SubTitle">© 2024 DuckStore. Keep it quacky.</h2>
-      </section>
-      <section>
-        <p>Sobre nosotros</p>
-        <p>Información de envio</p>
-      </section>
-      <section>
-        <p>Devolución</p>
-        <p>Preguntas frecuentes</p>
-      </section>
-      <section>
-        <p>Contactos</p>
-      </section>
-    </footer>
+    <footer-component></footer-component>
+    <!--Final sección venta exclusiva-->
+    <script src="src/js/components.js"></script>
   </body>
 </html>
