@@ -1,29 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- css injection -->
-    <link rel="stylesheet" href="src/css/styles.css" />
-    <!-- font importation -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-  
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" 
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Producto</title>
+  <!-- css injection -->
+  <link rel="stylesheet" href="src/css/Details.css">
+  <link rel="stylesheet" href="src/css/styles.css">
+<!--font importation -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,20０..8００;1,2００..8００&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+  <!--Vinculación al archivo de scripts -->
+  <script src="src/js/carrusel.js" defer></script>
 </head>
+
 <body>
-    <header-component></header-component>
-    <footer-component></footer-component>
-    <script src="src/js/components.js"></script>
+  <header-component></header-component>
+  <script src="src/js/components.js"></script>
+  <!-- Inicio sección de detalles del producto -->
+  <main class="product-container">
+    <!--carrusel principal-->
+    <section class="gallery-container">
+      <div class="columna-imagen-carrusel">
+        <button class="prev-button" aria-label="Previous Image"><span class="material-symbols-outlined">chevron_left</span></button>
+        <img src="src/img/pato-galactico-Image-1.png" alt="Imagen de pato galáctico"></img>
+        <button class="next-button" aria-label="Next Image"><span class="material-symbols-outlined">chevron_right</span></button>
+      </div>
+    </section>
+    <!-- Descripción del producto -->
+    <section class="description-container">
+      <h1 class="titulo-producto">Pato Galáctico</h1>
+      <div class="precio-producto">24,99 €</div>
+      <p class="descripcion-producto">Ilumina tu bañera con nuestra edición limitada intergaláctica. Este patito no solo flota con gracia celestial, sino que absorbe la luz para revelar constelaciones brillantes en la oscuridad. Perfecto para navegantes nocturnos y soñadores estelares.</p>
+      <!-- Información de stock -->
+      <div class="stock-info">
+        <span class="material-symbols-outlined">task_alt</span>
+        <span>En stock y listo para enviar</span>
+      </div>
+      <!-- Cantidad-->
+      <div class="control-cantidad">
+        <label class="label-cantidad" for="cantidad">Cantidad</label>
+        <div class="separacion-linea">
+          <div class="botones-cantidad">
+            <button class="cantidad-btn" onclick="decreaseQuantity()">-</button>
+            <input class="cantidad-input" type="text" id="cantidad" value="1" readonly></input>
+            <button class="cantidad-btn" onclick="increaseQuantity()">+</button>
+          </div>
+          <div class="boton-comprar">
+            <button class="comprar-btn" type="button" onclick="agregarAlCarrito()">
+              <span class="material-symbols-outlined">shopping_cart</span>
+              <span> Agregar al carrito</span>
+            </button>
+          </div>
+        </div>
+      </div> 
+    </section>
+  </main>
+  <!-- Final sección de detalles del producto -->
+<footer-component></footer-component>
 </body>
 </html>
