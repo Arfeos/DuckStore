@@ -5,12 +5,12 @@ class headerComponent extends HTMLElement{
         this.innerHTML= `
         <header class="header">
       <div class="header-container">
-        <a href="#" class="logo">DuckStore</a>
+        <a href="index.html" class="logo">DuckStore</a>
         <nav class="nav-links">
           <ul>
-          <li><a href="#">Início</li>
-          <li><a href="#">Catálogo</a><li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="index.html">Início</li>
+          <li><a href="catalog.html">Catálogo</a><li>
+          <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <span>
