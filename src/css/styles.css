@@ -690,17 +690,47 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-
-  /*Ocultar .nav-links*/
-  .nav-links,
+@media (max-width: 768px){
+  /Ocultar .nav-links/
   .search {
-
     display: none;
-    flex-direction: column;
-
   }
 
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+  }
+
+  .nav-links.open {
+    display: block;
+    height: 100%;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links ul li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links ul li a {
+    display: block;
+    padding: 16px 24px;
+  }
+
+  .burguerMenu_icon {
+    display: flex;
+  }
+ 
 }
 
 /* Ajustes responsive para pantallas pequeñas */
