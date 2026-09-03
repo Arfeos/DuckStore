@@ -68,3 +68,5 @@ code .
 Y desde VS Code puedes instalar **Live Server** y abrir `index.html` con él.
 
 [1]: https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&ref=news-tutorials-ai-research&utm_source=chatgpt.com "Clonar un repositorio - Documentación de GitHub"
+
+ Miembros del equipo
