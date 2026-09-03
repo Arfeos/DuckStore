@@ -73,26 +73,26 @@
         </section>
         <div class="columna-formulario">
           <h2 class="titulo-formulario">Envíanos un mensaje</h2>
-          <form class="formulario">
+          <form class="formulario" id="formulario">
               <div class="grid-formulario">
                   <div class="celda-uno">
                     <label class="etiqueta-uno">
                       Nombre
                     </label>
-                    <input class="input-uno" type="text" placeholder="Tu nombre">
+                    <input class="input-uno" type="text" placeholder="Tu nombre" id="nombre" required>
                   </div>
                   <div class="celda-uno">
                     <label class="etiqueta-uno">
                       Email
                     </label>
-                    <input class="input-email" type="text" placeholder="tu@email.com">
+                    <input class="input-email" type="email" placeholder="tu@email.com" id="email" required>
                   </div>
               </div>
             <div class="contenedor-mensaje">
               <label class="etiqueta-uno">
                  Mensaje
               </label>
-              <textarea class="campo-textarea" placeholder="¿En qué podemos ayudarte?"></textarea>
+              <textarea class="campo-textarea" placeholder="¿En qué podemos ayudarte?" id="mensaje"></textarea>
             </div>
             <div class="contenedor-botones">
               <a href="#" class="enlace">
@@ -102,7 +102,6 @@
               <button class="boton-enviar" type="submit"> 
                 <span class="material-symbols-mail">send</span>
                 Enviar mensaje
-
               </button>
             </div>
           </form>
@@ -112,5 +111,6 @@
     <footer-component></footer-component>
     <!--Final sección venta exclusiva-->
     <script src="src/js/components.js"></script>
+    <script src="src/js/formulario.js"></script>
   </body>
 </html>
