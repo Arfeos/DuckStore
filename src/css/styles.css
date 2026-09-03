@@ -33,7 +33,7 @@ body {
   padding: 0 24px;
 }
 
-.burguerMenu_icon {
+.header-actions .burguerMenu_icon {
     display: none; 
     background: none;
     border: none;
@@ -120,7 +120,6 @@ section.container-low {
   font-family: 'Poppins', sans-serif;
   padding: 60px 20px;
   display: flex;
-  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -445,7 +444,7 @@ footer {
   /* se extiende a lo ancho */
   max-width: 1200px;
   /* crea márgenes laterales al centrarse */
-  margin: 124px auto;
+  margin: 6em auto;
   /* arriba/abajo 124px, centrado horizontal */
   padding: 0;
   background: #ffffff;
@@ -457,8 +456,7 @@ footer {
 
 /* Contenedor de la imagen */
 .hero-image {
-  width: 1200px;
-  height: 500px;
+  min-height: 500px;
   margin: 0 auto;
   /* centrar */
   overflow: hidden;
@@ -472,7 +470,19 @@ footer {
   background-repeat: no-repeat;
   position: relative;
 }
+.header-actions button{
+     background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.header-actions .burger-btn{
+  display: none;
+}
 .hero-content {
   padding: 0px 20px 20px 20px;
   /* controla el offset izquierdo aquí */
@@ -588,16 +598,12 @@ footer {
     margin-bottom: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
+ @media (max-width:1240px){
+  .hero{
+    max-width: calc(100% - 40px); 
+  }
+  
+ }
 /* --- Breakpoint: tablet / pantallas medianas --- */
 @media (max-width: 1024px) {
   .hero {
@@ -606,7 +612,6 @@ footer {
 
   .hero-image {
     padding: 80px 18px 18px 18px;
-    min-height: 360px;
   }
 
   .hero-content {
@@ -633,7 +638,6 @@ footer {
   section.container-low {
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
   }
 
   .container-left {
@@ -648,8 +652,6 @@ footer {
   }
 
   .columna-imagen {
-    width: 100%;
-    height: 60vw;
     max-height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -691,7 +693,7 @@ footer {
 }
 
 @media (max-width: 768px){
-  /Ocultar .nav-links/
+  /*Ocultar .nav-links*/
   .search {
     display: none;
   }
@@ -727,10 +729,11 @@ footer {
     padding: 16px 24px;
   }
 
-  .burguerMenu_icon {
+  .header-actions .burguerMenu_icon {
     display: flex;
   }
  
+
 }
 
 /* Ajustes responsive para pantallas pequeñas */
@@ -769,7 +772,6 @@ footer {
     padding: 6px 0 0 0;
     padding: 6px 12px;
     font-size: 15px;
-    font-size: 14px;
     margin-bottom: 12px;
     /* mantiene separación con el botón */
   }
