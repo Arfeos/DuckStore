@@ -103,22 +103,7 @@ body {
 .search input::placeholder {
   color: #999;
 }
- @media (max-width: 1024px){
-    .search {
-      display: block;
-    }
 
-}
-@media (max-width: 768px){
-  /*Ocultar .nav-links*/
-  .nav-links, .search{
-    
-    display:none;
-    flex-direction: column;
-    
-  }
- 
-}
 
 /* MAIN */
 section.container-low {background-color: #f4f4f8; font-family: 'Poppins', sans-serif; padding: 60px 20px; display: flex; min-height: 100vh; justify-content: center; align-items: center;}
@@ -139,17 +124,7 @@ section.container-low {background-color: #f4f4f8; font-family: 'Poppins', sans-s
 .precio-reserva .precio {font-size: 28px; font-weight: 700; color: #1f2937; align-items: center; align-content: center;}
 .precio-reserva .boton-reserva {font-size: 15px; background-color: #8f9c14; color: #ffffff; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;}
 .precio-reserva .boton-reserva:hover {background-color: #333;transform: translateY(-2px);}
-@media (max-width: 1100px) 
-{ section.container-low {flex-direction: column; align-items: center; padding-top: 10px;}
-    .container-left {justify-self: center;}
-    .tarjeta-producto {flex-direction: column; gap: 0px; align-content: center; align-items: center;}
-    .columna-imagen {width: 100%; height: 60vw; max-height: 800px; background-size: contain; background-repeat: no-repeat; background-position: center top; margin-bottom: 0px; padding: 0; padding-bottom: 0px;}
-    .columna-imagen-img {max-width: 100%; height: auto; display:block}
-    .columna-descripcion {width: 100%; padding: 10px; text-align: center; margin-top: 0px; justify-self: center;}
-    .descripcion-producto {margin-left: auto; margin-right: auto; align-items: center;}
-    .contador-tiempo {justify-self: center;}
-    .precio-reserva {margin-left: auto; margin-right: auto; align-items: center;}
-}
+
 /* FIN MAIN */
 /* FEATURE QUADS*/
 .feature-section {
@@ -442,6 +417,29 @@ footer {
   }
 }
 
+
+
+
+
+/* FIN BANNER */
+
+
+
+
+
+
+
+@media (max-width: 1100px) 
+{ section.container-low {flex-direction: column; align-items: center; padding-top: 10px;}
+    .container-left {justify-self: center;}
+    .tarjeta-producto {flex-direction: column; gap: 0px; align-content: center; align-items: center;}
+    .columna-imagen {width: 100%; height: 60vw; max-height: 800px; background-size: contain; background-repeat: no-repeat; background-position: center top; margin-bottom: 0px; padding: 0; padding-bottom: 0px;}
+    .columna-imagen-img {max-width: 100%; height: auto; display:block}
+    .columna-descripcion {width: 100%; padding: 10px; text-align: center; margin-top: 0px; justify-self: center;}
+    .descripcion-producto {margin-left: auto; margin-right: auto; align-items: center;}
+    .contador-tiempo {justify-self: center;}
+    .precio-reserva {margin-left: auto; margin-right: auto; align-items: center;}
+}
 /* --- Breakpoint: tablet / pantallas medianas --- */
 @media (max-width: 1024px) {
   .hero {
@@ -453,22 +451,29 @@ footer {
   }
   .hero-content { max-width: 60ch; gap: 10px; }
   .hero-desc { max-width: 40ch; }
+      .search {
+      display: block;
+    }
 }
-
-
-
-/* FIN BANNER */
-
-
 @media(max-width: 900px){
   .cards-grid{
       grid-template-columns: repeat(2, 1fr);
   }
 }
-
-/* --- Breakpoint: móvil --- */
+@media (max-width: 768px){
+  /*Ocultar .nav-links*/
+  .nav-links, .search{
+    
+    display:none;
+    flex-direction: column;
+    
+  }
+ 
+}
+/* Ajustes responsive para pantallas pequeñas */
 @media (max-width: 600px) {
-  .hero {
+
+ .hero {
     margin: 40px 12px; /* menos margen lateral y vertical en móvil */
     border-radius: 0.75rem;
   }
@@ -483,14 +488,18 @@ footer {
     max-width: 100%;
   }
   .hero-title {
+    font-size: clamp(20px, 6vw, 32px);
     padding: 0;
+    padding: 8px 12px;
     font-size: 22px;
     line-height: 28px;
   }
   .hero-desc {
-    padding: 6px 0 0 0;
     max-width: 100%;
+    padding: 6px 0 0 0;
+     padding: 6px 12px;   
     font-size: 15px;
+     font-size: 14px;
     margin-bottom: 12px; /* mantiene separación con el botón */
   }
   .hero-btn {
@@ -503,24 +512,6 @@ footer {
   .header h2{
     font-size: 1.5rem;
   }
-}
-
-/* Ajustes responsive para pantallas pequeñas */
-@media (max-width: 600px) {
-  .hero-image {
-    height: 360px;
-    padding: 16px;
-  }
-  .hero-title {
-    font-size: clamp(20px, 6vw, 32px);
-    padding: 8px 12px;
-  }
-  .hero-desc {
-    font-size: 14px;
-    padding: 6px 12px;
-    max-width: 100%;
-  }
-
   
 }
 
