@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Be Vietnam Pro";
 }
 /* HEADER */
 
@@ -289,7 +290,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  .LogoTitle,
+  .logo, .LogoTitle,
   .SubTitle {
     font-family: "Plus Jakarta Sans";
     margin-block: 1em;
