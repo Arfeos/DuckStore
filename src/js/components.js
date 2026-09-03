@@ -32,7 +32,7 @@ class footerComponent extends HTMLElement{
         <footer>
             <section>
                 <h1 class="LogoTitle">DuckStore</h1>
-                <h2 class="SubTitle">© 2024 DuckStore. Keep it quacky.</h2>
+                <h2 class="SubTitle">© 2026 DuckStore. Keep it quacky.</h2>
             </section>
             <section>
                 <p>Sobre nosotros</p>
