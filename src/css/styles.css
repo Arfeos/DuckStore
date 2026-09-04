@@ -151,11 +151,6 @@ section.container-low {
 .columna-imagen {
   flex: 1 1 45%;
   display: flex;
-  justify-content: center;
-  background-image: url(src=src/img/venta-exclusiva.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .columna-imagen img {
@@ -472,7 +467,7 @@ footer {
   /* arriba 48px, derecha 20px, abajo 20px, izquierda 20px */
   box-sizing: border-box;
   background-image:
-    linear-gradient(rgba(237, 238, 239, 0.6), rgba(237, 238, 239, 0.6)), url('/src/img/fotobanner.png');
+    linear-gradient(rgba(237, 238, 239, 0.6), rgba(237, 238, 239, 0.6)), url('../../img/fotobanner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
