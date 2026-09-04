@@ -5,7 +5,7 @@ class headerComponent extends HTMLElement{
         this.innerHTML= `
         <header class="header">
             <div class="header-container">
-                <a href="#" class="logo">DuckStore</a>
+                <a href="index.html" class="logo">DuckStore</a>
                 <nav class="nav-links">
                     <ul>
                         <li><a href="index.html">Início</a></li>
