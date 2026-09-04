@@ -10,7 +10,7 @@ class headerComponent extends HTMLElement{
                     <ul>
                         <li><a href="index.html">Início</a></li>
                         <li><a href="catalog.html">Catálogo</a></li>
-                        <li><a href="contacti.html">Contacto</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions">
