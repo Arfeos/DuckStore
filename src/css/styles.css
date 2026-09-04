@@ -151,6 +151,7 @@ section.container-low {
 .columna-imagen {
   flex: 1 1 45%;
   display: flex;
+  justify-content: center;
 }
 
 .columna-imagen img {
@@ -439,6 +440,7 @@ footer {
     color: #4d4732;
     margin-block: 1em;
   }
+  a{text-decoration: none;}
 }
 
 /* BANNER */
