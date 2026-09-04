@@ -410,13 +410,10 @@
   
 }
 
-/* Versión escritorio (lg:grid-cols-12) */
+
 @media (min-width: 1024px) {
   .grid-custom {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .columna-mapa {
-    grid-column: span 5;         /* col-span-5 */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
