@@ -466,7 +466,7 @@ footer {
   /* arriba 48px, derecha 20px, abajo 20px, izquierda 20px */
   box-sizing: border-box;
   background-image:
-    linear-gradient(rgba(237, 238, 239, 0.6), rgba(237, 238, 239, 0.6)), url('/src/img/fotobanner.png');
+    linear-gradient(rgba(237, 238, 239, 0.6), rgba(237, 238, 239, 0.6)), url('./src/img/fotobanner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
