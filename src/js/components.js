@@ -62,7 +62,7 @@ class footerComponent extends HTMLElement{
                 <p>Preguntas frecuentes</p>
             </section>
             <section>
-                <p>Contactos</p>
+                <a href="Contactos.html"><p>Contactos</p></a>
             </section>
         </footer>
         `
