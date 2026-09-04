@@ -1,21 +1,31 @@
-Explicación del proyecto
+ ##  Proyecto Duckstore 
 
-Captura de como se ve
+Duckstore es una plataforma de comercio electrónico especializada en la venta y distribución de patitos de goma temáticos y de colección.
 
-<img width="1919" height="760" alt="Captura de pantalla 2026-09-04 112155" src="https://github.com/user-attachments/assets/28a76b1d-db16-4385-8c21-dc2756a4079e" />
+## 📸 1. Captura del Proyecto
 
-<img width="1881" height="608" alt="image" src="https://github.com/user-attachments/assets/d28473aa-2c11-42fc-88cb-099aeac7acb7" />
+<img width="219" height="453" alt="Screenshot 2026-09-04 110217" src="https://github.com/user-attachments/assets/57f886e6-79d5-4e47-bd4e-e8fbbe41caa6" />
+<img width="199" height="431" alt="Screenshot 2026-09-04 110239" src="https://github.com/user-attachments/assets/ffea8f9c-4427-4358-afa5-d5d4aaa7d9e1" />
+<img width="699" height="437" alt="Screenshot 2026-09-04 110630" src="https://github.com/user-attachments/assets/635b7155-4cae-41c5-a325-b770793576cb" />
+<img width="709" height="440" alt="Screenshot 2026-09-04 110449" src="https://github.com/user-attachments/assets/d938d7c3-f498-4720-8b42-f5d3e7479a97" />
+<img width="690" height="433" alt="Screenshot 2026-09-04 111649" src="https://github.com/user-attachments/assets/8b025831-38e0-465b-b02e-e1fa0fcd26ed" />
 
-<img width="1896" height="916" alt="Captura de pantalla 2026-09-03 141047" src="https://github.com/user-attachments/assets/2a342a28-670f-45d7-9833-8c00b937a1a8" />
+*Enlace de nuestra página* (https://arfeos.github.io/DuckStore/)
+## 🛠️ 2. Herramientas y Tecnologías Utilizadas
+
+HTML5, CSS3, JavaScript y GitHub
 
 
-Herramientas que se ha utilizado
-Html, Css, Javascript, Visual Studio Code, Git.
+## 🔗 3. Acceso al Prototipo (Stitch)
 
-acceso al stitch
-https://stitch.withgoogle.com/projects/7924876949014421673
+Puedes acceder al prototipo interactivo y al flujo de diseño en la plataforma Stitch:
 
-como instalar el proyecto en nuestro ordenador
+* 📌 Enlace a Stitch: (https://stitch.withgoogle.com/projects/7924876949014421673)
+
+
+## ⚙️ 4. Guía de Instalación en Local
+
+Sigue los siguientes pasos para instalar y ejecutar el proyecto en tu máquina:
 
 1. Instala **Git** en tu ordenador si todavía no lo tienes.
 2. Abre una terminal.
@@ -73,6 +83,17 @@ code .
 
 Y desde VS Code puedes instalar **Live Server** y abrir `index.html` con él.
 
-[1]: https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&ref=news-tutorials-ai-research&utm_source=chatgpt.com "Clonar un repositorio - Documentación de GitHub"
+  
+##  👥 5. Miembros del Equipo
 
- Miembros del equipo
+*Scrum   Master*:  Jorge M. Macias
+
+*Developement Team*: Juliana Rodas, Rubén García, Renata Santos
+
+*Product Owner* : Ángel Martínez
+      
+
+      
+
+  
+
