@@ -1,0 +1,422 @@
+.titulo-personalizado-contactos {
+  text-align: center;     /* Centra el texto */
+  color: rgb(112, 93, 0);         /* Color del título (puede ser nombre, hex, rgb...) */
+  font-size: 48px;        /* Tamaño del texto */
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
+.bloque-estilo-tailwind {
+  flex-grow: 1;                 /* flex-grow */
+  width: 100%;                  /* w-full */
+  max-width: 1200px;            /* max-w-container-max (ajusta según tu diseño) */
+  margin-left: auto;            /* mx-auto */
+  margin-right: auto;           /* mx-auto */
+  padding-left: 16px;           /* px-margin-mobile */
+  padding-right: 16px;          /* px-margin-mobile */
+  padding-top: 48px;            /* py-12 */
+  padding-bottom: 48px;         /* py-12 */
+  display: flex;                /* flex */
+  flex-direction: column;       /* flex-col */
+  gap: 48px;                    /* gap-12 */
+}
+
+.seccion-titulo {
+  text-align: center;        /* text-center */
+  max-width: 42rem;          /* max-w-2xl → 2xl = 42rem = ~672px */
+  margin-left: auto;         /* mx-auto */
+  margin-right: auto;        /* mx-auto */
+  display: flex;             /* flex */
+  flex-direction: column;    /* flex-col */
+  align-items: center;       /* items-center */
+  gap: 1rem;                 /* gap-4 → 4 = 1rem */
+}
+
+.texto-body {
+  font-size: 18px;          /* tamaño del texto */
+  line-height: 28px;        /* altura de línea */
+  font-weight: 400;         /* peso de fuente */
+  font-family: "Be Vietnam Pro", sans-serif; /* font-body-lg */
+  color: rgb(77 71 50); /* text-on-surface-variant */
+}
+
+.grid-custom {
+  display: grid;                 /* grid */
+  grid-template-columns: 1fr;    /* grid-cols-1 */
+  gap: var(--gutter, 16px);       /* gap-gutter → define tu gutter */
+  width: 100%;                   /* w-full */
+}
+
+.columna-mapa {
+  width: 484.4px;
+  background-color: #fff; /* bg-surface */
+  border-radius: 0.75rem; /* rounded-xl */
+
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+
+  height: 100%; /* h-full */
+
+  overflow: hidden; /* overflow-hidden */
+
+  border: 1px solid rgb(225 227 228); /* border + border-surface-variant */
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); /* ambient-shadow-1 */
+
+ 
+}
+
+.columna-formulario {
+  background-color: rgb(248 249 250);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(112, 93, 0, 0.04);
+  padding: 1.5rem;
+  border: 1px solid rgb(225 227 228);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-texto {
+  padding: 24px;                 /* p-6 */
+  display: flex;                 /* flex */
+  flex-direction: column;        /* flex-col */
+  gap: 1.5rem;
+}
+
+.titulo-mapa {
+  font-family: "Plus Jakarta Sans", sans-serif;   /* font-headline-md */
+  font-size: 28px;                                /* text-headline-md */
+  font-weight: 700;                                /* headline suele ser bold */
+  line-height: 36px;                               /* altura típica */
+  color: rgb(33 33 33);                            /* text-on-surface */
+
+  margin-bottom: 8px;                              /* mb-2 */
+
+  display: flex;                                   /* flex */
+  align-items: center;                             /* items-center */
+  gap: 8px;                                        /* gap-2 → 0.5rem → 8px */
+}
+
+.simbolo {
+  font-family: "Material Symbols Outlined";   /* material-symbols-outlined */
+  font-size: 24px;                            /* tamaño por defecto del icono */
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+
+  color: rgb(253 139 0);          /* color del símbolo */
+  fill: currentColor;
+  font-variation-settings: 'FILL' 1;
+}
+
+.subtitulo {
+  font-family: "Be Vietnam Pro", sans-serif;   /* font-body-md */
+  font-size: 16px;                             /* text-body-md */
+  line-height: 24px;                           /* altura típica body-md */
+  font-weight: 400;                             /* peso estándar */
+
+  color: rgb(77 71 50);                         /* text-on-surface-variant */
+}
+
+.border-surface-variant {
+  border-color: rgb(225 227 228);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.horario {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: rgb(112 93 0);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contenedor-horario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lista-horario {
+  /* font-body-md */
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  /* text-body-md */
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  /* text-on-surface-variant */
+  color: rgb(77 71 50);
+
+  /* flex flex-col */
+  display: flex;
+  flex-direction: column;
+
+  /* gap-2 */
+  gap: 0.5rem;
+
+  /* reset de ul */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-lista {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-formulario {
+  width: 608.4px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: rgb(25 28 29);
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+.grid-formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.celda-uno {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.etiqueta-uno {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: rgb(77 71 50);
+}
+
+.input-uno {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: rgb(25 28 29);
+  background-color: rgb(255 255 255);
+
+  border: 2px solid rgb(225 227 228);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem 1rem;
+
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.input-email {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: rgb(25 28 29);
+  background-color: rgb(255 255 255);
+
+  border: 2px solid rgb(225 227 228);
+  border-radius: 0.5rem;
+
+  padding: 0.75rem 1rem;
+
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.contenedor-mensaje {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.campo-textarea {
+  /* font-body-md */
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  /* text-on-surface */
+  color: rgb(25 28 29);
+
+  /* bg-surface-container-lowest */
+  background-color: rgb(255 255 255);
+
+  /* border-2 + border-surface-variant */
+  border: 2px solid rgb(225 227 228);
+
+  /* rounded-lg */
+  border-radius: 0.5rem;
+
+  /* px-4 py-3 */
+  padding: 0.75rem 1rem;
+
+  /* resize-y */
+  resize: vertical;
+
+  /* min-h-[120px] */
+  min-height: 120px;
+
+  /* transition-colors */
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  /* importante para que padding y border no aumenten el ancho */
+  box-sizing: border-box;
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.enlace {
+
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+
+  color: rgb(0 102 138);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  text-decoration: none;
+}
+
+.material-symbols-mail {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.boton-enviar {
+  background-color: rgb(255 215 0);
+  color: rgb(112 94 0);
+
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  border: none;
+  cursor: pointer;
+
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.boton-enviar:hover {
+  transform: scale(1.05);
+}
+
+/*MEDIA*/
+
+@media (min-width: 640px) {
+  .contenedor-botones {
+    flex-direction: row;
+  }
+
+  .boton-enviar {
+    width: auto;
+  }
+}
+
+/* Versión desktop (md:) */
+@media (min-width: 768px) {
+  .bloque-estilo-tailwind {
+    padding-left: 32px;         /* md:px-margin-desktop */
+    padding-right: 32px;        /* md:px-margin-desktop */
+    padding-top: 80px;          /* md:py-20 */
+    padding-bottom: 80px;       /* md:py-20 */
+    gap: 80px;                  /* md:gap-20 */
+  }
+  
+  .columna-formulario {
+    padding: 2.5rem;
+  }
+
+  
+   .contenedor-texto {
+    padding: 32px;               /* p-8 */
+  }
+
+    .grid-formulario {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  
+}
+
+/* Versión escritorio (lg:grid-cols-12) */
+@media (min-width: 1024px) {
+  .grid-custom {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .columna-mapa {
+    grid-column: span 5;         /* col-span-5 */
+  }
+}
+
