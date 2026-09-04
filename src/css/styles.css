@@ -144,6 +144,8 @@ section.container-low {
 
 .columna-imagen {
   flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
   background-image: url(src=src/img/venta-exclusiva.png);
   background-size: cover;
   background-repeat: no-repeat;
