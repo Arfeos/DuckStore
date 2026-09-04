@@ -1,6 +1,8 @@
 Explicación del proyecto
 
 Captura de como se ve
+<img width="1881" height="608" alt="image" src="https://github.com/user-attachments/assets/d28473aa-2c11-42fc-88cb-099aeac7acb7" />
+
 <img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/9b9601c5-5779-4d26-802d-bf5e84a5878e" />
 
 Herramientas que se ha utilizado
