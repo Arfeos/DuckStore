@@ -1,0 +1,116 @@
+<!-- inicio del proyecto -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck Store - Inicio</title>
+    <!-- css injection -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <!-- css contactos -->
+    <link rel="stylesheet" href="src/css/stylescontactos.css" />
+
+    <!-- font importation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" 
+/>
+
+    <!-- Inicio BANNER -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Final BANNER -->
+  </head>
+  <body>
+    <header-component></header-component>
+    <main class="bloque-estilo-tailwind">
+      <section class="seccion-titulo">
+        <h2 class="titulo-personalizado-contactos">¡Hablemos, cuac!</h2>
+        <p class="texto-body">¿Tienes alguna pregunta sobre nuestros patos, envíos o simplemente quieres saludar? Estamos aquí para ayudarte a mantener tu vida a flote.</p>
+      </section>
+      <section class="grid-custom">
+        <section class="columna-mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12150.866192876396!2d-3.7275128467930023!3d40.41512972878228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229c51ca9d00d%3A0x2aa435973b3894f1!2sMADRID%20DUCK%20STORE!5e0!3m2!1ses!2ses!4v1788348430607!5m2!1ses!2ses" width="484.4" height="256" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          <div class="contenedor-texto">
+            <div>
+              <h3 class="titulo-mapa">
+              <span class="simbolo">location_on</span>
+              Quack HQ</h3>
+              <p class="subtitulo">
+              123 Puddle Street<br>
+              Ducktown, DK 45678 <br>
+              Waterland
+              </p>
+            </div>
+            <div class="border-surface-variant"></div>
+            <div class="contenedor-horario">
+              <h3 class="horario">horario de nado</h3>
+              <ul class="lista-horario">
+                <li class="item-lista">
+                  <span>Lunes - Viernes:</span>
+                  <span>9:00 AM - 6:00 PM</span>
+                </li>
+                <li class="item-lista">
+                  <span>Sábados:</span>
+                  <span>10:00 AM - 2:00 PM</span>
+                </li>
+                <li class="item-lista">
+                  <span>Domingos:</span>
+                  <span>Cerrado (Nadando)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+        <div class="columna-formulario">
+          <h2 class="titulo-formulario">Envíanos un mensaje</h2>
+          <form class="formulario" id="formulario">
+              <div class="grid-formulario">
+                  <div class="celda-uno">
+                    <label class="etiqueta-uno">
+                      Nombre
+                    </label>
+                    <input class="input-uno" type="text" placeholder="Tu nombre" id="nombre" required>
+                  </div>
+                  <div class="celda-uno">
+                    <label class="etiqueta-uno">
+                      Email
+                    </label>
+                    <input class="input-email" type="email" placeholder="tu@email.com" id="email" required>
+                  </div>
+              </div>
+            <div class="contenedor-mensaje">
+              <label class="etiqueta-uno">
+                 Mensaje
+              </label>
+              <textarea class="campo-textarea" placeholder="¿En qué podemos ayudarte?" id="mensaje"></textarea>
+            </div>
+            <div class="contenedor-botones">
+              <a href="#" class="enlace">
+                <span class="material-symbols-mail">mail</span>
+                Enviar correo directo
+              </a>
+              <button class="boton-enviar" type="submit"> 
+                <span class="material-symbols-mail">send</span>
+                Enviar mensaje
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer-component></footer-component>
+    <!--Final sección venta exclusiva-->
+    <script src="src/js/components.js"></script>
+    <script src="src/js/formulario.js"></script>
+  </body>
+</html>
