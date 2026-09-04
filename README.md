@@ -1,6 +1,9 @@
 Explicación del proyecto
 
 Captura de como se ve
+
+<img width="1919" height="760" alt="Captura de pantalla 2026-09-04 112155" src="https://github.com/user-attachments/assets/28a76b1d-db16-4385-8c21-dc2756a4079e" />
+
 <img width="1881" height="608" alt="image" src="https://github.com/user-attachments/assets/d28473aa-2c11-42fc-88cb-099aeac7acb7" />
 
 <img width="1896" height="916" alt="Captura de pantalla 2026-09-03 141047" src="https://github.com/user-attachments/assets/2a342a28-670f-45d7-9833-8c00b937a1a8" />
